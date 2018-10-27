@@ -7754,6 +7754,13 @@ react-error-overlay@^5.0.5:
   resolved "https://registry.yarnpkg.com/react-error-overlay/-/react-error-overlay-5.0.5.tgz#716ff1a92fda76bb89a39adf9ce046a5d740e71a"
   integrity sha512-ab0HWBgxdIsngHtMGU8+8gYFdTBXpUGd4AE4lN2VZvOIlBmWx9dtaWEViihuGSIGosCKPeHCnzFoRWB42UtnLg==
 
+react-hook-shared-state@^0.0.1:
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/react-hook-shared-state/-/react-hook-shared-state-0.0.1.tgz#da9742aafed2c1204cdf9be2a3624b12397e9b98"
+  integrity sha512-f6JREbtIki0C2Yqp0qZ6yFEH+7ZogTOi2Jq/kfo6AFY1hUFLdsdutWzOe9eBo9DNVpksr4v+S/k511G68yiL8A==
+  dependencies:
+    react "^16.7.0-alpha.0"
+
 react-router-dom@^4.3.1:
   version "4.3.1"
   resolved "https://registry.yarnpkg.com/react-router-dom/-/react-router-dom-4.3.1.tgz#4c2619fc24c4fa87c9fd18f4fb4a43fe63fbd5c6"

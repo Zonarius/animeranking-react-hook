@@ -1,15 +1,18 @@
-import { useState, useEffect } from 'react';
+import { useEffect } from 'react';
 import webrootQuery from './queries/webroot';
+import { createSharedState } from 'react-hook-shared-state';
+
+export const [useCurrentNode, setCurrentNode] = createSharedState({})
 
 export function useWebroot(path) {
-  const [result, setResult] = useState({});
+  const node = useCurrentNode();
 
   useEffect(() => {
     fetchGraphQl('animeranking', webrootQuery, { path })
-      .then(setResult);
+      .then(setCurrentNode);
   }, [path])
 
-  return result;
+  return node;
 }
 
 function fetchGraphQl(project, query, variables) {

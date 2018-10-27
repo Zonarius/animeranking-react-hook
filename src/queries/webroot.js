@@ -1,14 +1,25 @@
 export default `
 query ($path: String) {
-    node(path: $path) {
-        path
-        fields {
-            __typename
-        }
-        ...Home
-        ...Season
-        ...Year
+  node(path: $path) {
+    path
+    fields {
+      __typename
     }
+    breadcrumb {
+      uuid
+      fields {
+        ... on year {
+          name
+        }
+        ... on season {
+          name
+        }
+      }
+    }
+    ...Home
+    ...Season
+    ...Year
+  }
 }
 
 fragment Home on Node {
@@ -71,7 +82,7 @@ fragment Year on Node {
       winter {
         path
       }
-  }
+    }
   }
 }
 `
