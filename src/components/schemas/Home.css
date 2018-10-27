@@ -1,0 +1,4 @@
+.years .image img {
+  height: 650px;
+  object-fit: cover;
+}

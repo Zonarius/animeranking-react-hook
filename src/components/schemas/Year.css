@@ -1,0 +1,6 @@
+a.disabled {
+  cursor: not-allowed;
+}
+a.disabled .year {
+  opacity: 0.3;
+}
